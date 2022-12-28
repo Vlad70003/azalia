@@ -1,0 +1,9 @@
+.baseWrapperMargin {
+  padding: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .baseWrapperMargin {
+    padding: 0 15px;
+  }
+}

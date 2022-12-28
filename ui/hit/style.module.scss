@@ -1,0 +1,38 @@
+.hit {
+  width: 36px;
+  height: 24px;
+  background-color: rgba(242, 60, 48, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0 0px 24px 14px;
+    border-color: transparent transparent rgba(242, 60, 48, 1) transparent;
+    border-style: solid;
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0 0px 24px 14px;
+    border-color: transparent transparent rgba(217, 54, 43, 1) transparent;
+    border-style: solid;
+    transform: rotate(180deg) translateX(-107%);
+    right: 0;
+  }
+}

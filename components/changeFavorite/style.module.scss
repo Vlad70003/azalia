@@ -1,0 +1,28 @@
+.favorite {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &_notActive {
+    border: 1px solid rgba(245, 245, 247, 1);
+    &:hover {
+      border: 1px solid rgba(255, 0, 0, 0.3);
+
+      & > img {
+        filter: grayscale(30%) opacity(0.7);
+      }
+    }
+
+    & > img {
+      filter: grayscale(100%) opacity(0.5);
+    }
+  }
+
+  &_active {
+    border: 1px solid rgba(255, 0, 0, 1);
+  }
+}

@@ -1,0 +1,14 @@
+.categoryCatalog {
+  margin-top: 40px;
+  &__title {
+    color: black;
+  }
+
+  &__list {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(332px, 332px));
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}

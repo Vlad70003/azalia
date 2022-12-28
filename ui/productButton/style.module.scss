@@ -1,0 +1,105 @@
+.productButton {
+  border-radius: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+
+  background: rgba(245, 245, 247, 1);
+
+  &__leftSide {
+    border-radius: 90px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &__rightSide {
+    display: flex;
+    align-items: baseline;
+    padding: 10px 20px 10px 0;
+    visibility: inherit;
+    transition: visibility 0s;
+    transition-delay: 0.5s;
+
+    &_close {
+      visibility: hidden;
+      transition: visibility 0s;
+    }
+  }
+
+  &__button {
+    background: rgba(64, 86, 161, 1);
+    padding: 10px 20px;
+    border-radius: 90px;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+    font-size: 13px;
+
+    &__close {
+      width: 100%;
+      // animation: open 1s forwards;
+      transition: width 0.5s linear, background 0.5s linear;
+    }
+    &__open {
+      width: 60%;
+      transition: width 0.5s linear, background 0.5s linear;
+      background: rgba(0, 177, 119, 1);
+    }
+  }
+
+  &__dec {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 2px;
+      background: rgba(46, 46, 51, 0.5);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__inc {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 2px;
+      background: rgba(46, 46, 51, 0.5);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      content: "";
+      display: block;
+      height: 10px;
+      width: 2px;
+      background: rgba(46, 46, 51, 0.5);
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__counter {
+    margin: 0 12px;
+    font-size: 12px;
+  }
+}

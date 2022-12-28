@@ -1,0 +1,70 @@
+.button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.priviteOfficeBorder {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    animation-duration: 0.2s;
+    animation-name: priviteOfficeBorderAnimation;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes priviteOfficeBorderAnimation {
+  from {
+  }
+
+  to {
+    width: 100%;
+    height: 4px;
+    bottom: -8px;
+    left: 0px;
+    background-color: #3d69b7;
+    border-radius: 2px;
+  }
+}
+
+.blueHoverClassColor {
+  &:hover {
+    color: rgb(61, 105, 183) !important;
+  }
+}
+
+.filterBtn {
+  border: 1px solid #3d69b7 !important;
+}
+
+.productBtnHover,
+.loggedInBtnHover,
+.orderBtnHover {
+  &:hover {
+    transition: all 0.2 linear;
+    background-color: #3d69b7 !important;
+  }
+
+  &:active {
+    background-color: #1b4e7d !important;
+  }
+}
+
+.registrationBtnHover,
+.orderBackBtnHover {
+  &:hover {
+    transition: all 0.2 linear;
+    background: #20598e14 !important;
+  }
+
+  &:active {
+    background: #20598e29 !important;
+  }
+}
+
+.bold {
+  font-family: "PT-SANS-BOLD";
+}

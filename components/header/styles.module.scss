@@ -1,0 +1,148 @@
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 50px 0 0 0;
+
+  &__leftSide {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 815px) {
+    &__leftSide {
+      align-items: baseline;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &__leftSide {
+      flex: 1;
+    }
+  }
+
+  &__input {
+    &__wrapperlaptop {
+      position: relative;
+    }
+
+    &__wrapperModile {
+      display: none;
+    }
+
+    @media screen and (max-width: 570px) {
+      &__wrapperModile {
+        position: relative;
+        display: block;
+      }
+    }
+  }
+  &__input {
+    &__wrapper {
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 815px) {
+    &__input {
+      &__wrapper {
+        display: none;
+      }
+    }
+  }
+
+  &__rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    &__rightSide {
+      flex: 1;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    &__wrapper {
+      padding-right: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2ede1;
+    }
+
+    @media screen and (max-width: 815px) {
+      &__wrapper {
+        width: 107px;
+        height: 21px;
+        padding-right: 20px;
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      &__wrapper {
+        width: 79px;
+        height: 15px;
+        padding-right: 18px;
+      }
+    }
+  }
+
+  &__changeShopBtn {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__seachWrapper {
+      display: none;
+    }
+
+    @media screen and (max-width: 815px) {
+      &__seachWrapper {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 570px) {
+      &__seachWrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-top: 46px;
+  }
+}
+
+.nav {
+  padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 1260px) {
+  .nav {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .nav {
+    display: none;
+  }
+}
