@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 
 import { truncate } from "../../script/wordProcessing/trancute";
-import { classBtn } from "./classBtn.ts";
+import { classBtn } from "./classBtn";
 
 export const Button = ({
   title,

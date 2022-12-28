@@ -1,11 +1,11 @@
 import styles from "./styles.module.scss";
 
 interface classNaneBtnInterface {
-  fontWeightClass: string | undefined;
-  hoverClassColor: string | undefined;
+  fontWeightClass?: string;
+  hoverClassColor?: string;
   activeBtn: boolean;
   disabled?: boolean;
-  selectClass?: string | undefined;
+  selectClass?: string;
   privateOffice?: string | null;
 }
 
